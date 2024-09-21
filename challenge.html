@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello nomadcoders</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="page-wrapper">
+    <section>
+      <div class="container">
+        <div class="top-wrap">
+        <div class="colock-wrap">
+          <p>Current Time</p>
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="weather-wrap">
+          <p> Weather / City</p>
+          <h2 id="weather">
+            <span></span>/
+            <span></span>
+          </h2>
+        </div>
+      </div>
+        <div class="line"> 
+          <img src="./images/line.png" alt="">
+        </div>
+        <div class="login-wrap">
+          <form  id="login-form" class="hidden">
+            <div class="form-wrap">
+              <div class="logo-wrap">
+                <img src="./images/logo.png" alt="">
+              </div>
+             
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Please enter your Name" required maxlength="15" id="name">
+                </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Please enter your Password" required maxlength="15" id="password">
+                </div>
+            <input type="submit" value="Log In" />
+            <p>Copyright ©nomadcoders. All rights reserved. </p>
+          </div>
+          </form>
+
+          <h1 id="greeting" class="hidden">
+            <div class="greeting-wrap">
+              <span class="greetingTxt"></span> 
+              <div class="helloImg"></div>
+            </div>
+            <form action="" id="todo-form">
+              <label for="todo-input">To Do List</label>
+              <input id="todo-input" type="text" placeholder="오늘의 TO DO LIST">
+            </form> 
+            <ul id="todo-list"></ul>
+          </h1>  
+          
+          <div class="line"> 
+            <img src="./images/line.png" alt="">
+          </div>
+          <div id="quote">
+            <p>Our Characters</p>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>    
+        </div>
+     
+      </div>
+    </section>
+  </main>
+  <script src="./js/login.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/todo.js"></script>
+</body>
+</html>
